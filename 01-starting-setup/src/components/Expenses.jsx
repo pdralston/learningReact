@@ -4,7 +4,7 @@ import ExpenseItem from "./ExpenseItem";
 function Expenses(props) {
   const expenseItems = props.expenses.map((expense) => (
     <ExpenseItem
-      id={expense.id}
+      key={expense.id}
       date={expense.date}
       title={expense.title}
       amount={expense.amount}
